@@ -68,7 +68,7 @@ module.exports = yeoman.generators.Base.extend({
         'README.md': 'README.md'
       };
 
-      files.forEach(function (dest, src) {
+      _.each(files, function (dest, src) {
         this.fs.copy(this.templatePath(f), this.destinationPath(f), this.options);
       }.bind(this));
     }
