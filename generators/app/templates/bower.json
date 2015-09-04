@@ -1,0 +1,16 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.0",
+  "authors": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "<%= name %>",
+    "<%= name %>s"
+  ],
+  "dependencies": {
+    "polymer": "~1.1.2"
+  }
+}
