@@ -62,13 +62,13 @@ module.exports = yeoman.generators.Base.extend({
 
     projectfiles: function () {
 
-      var files = [
-        'gulpfile.js',
-        '.gitignore',
-        'README.md',
-      ];
+      var files = {
+        'gulpfile.js': 'gulpfile.js',
+        '_gitignore': '.gitignore',
+        'README.md': 'README.md'
+      };
 
-      files.forEach(function (f) {
+      files.forEach(function (dest, src) {
         this.fs.copy(this.templatePath(f), this.destinationPath(f), this.options);
       }.bind(this));
     }
