@@ -69,7 +69,7 @@ module.exports = yeoman.generators.Base.extend({
       };
 
       _.each(files, function (dest, src) {
-        this.fs.copy(this.templatePath(f), this.destinationPath(f), this.options);
+        this.fs.copy(this.templatePath(src), this.destinationPath(dest), this.options);
       }.bind(this));
     }
   },
