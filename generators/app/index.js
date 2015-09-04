@@ -65,6 +65,7 @@ module.exports = yeoman.generators.Base.extend({
       var files = {
         'gulpfile.js': 'gulpfile.js',
         '_gitignore': '.gitignore',
+        '_bowerrc': '.bowerrc',
         'README.md': 'README.md'
       };
 
