@@ -30,7 +30,7 @@ gulp.task('update', function (done) {
         // Remove .git dir
         del.sync(TMP_DIR + '/.git');
 
-        if (!err) {
+        if (err) {
             done(err)
         }
 

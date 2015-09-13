@@ -11,6 +11,6 @@
     "<%= name %>s"
   ],
   "dependencies": {
-    "polymer": "~1.1.2"
+    "polymer": "~1.1.3"
   }
 }

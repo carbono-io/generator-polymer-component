@@ -3,7 +3,7 @@
     Polymer({
         is: '<%= name %>',
         ready: function () {
-            console.log('I <%= name %>');
+            console.log('I am <%= name %>');
         }
     });
 
